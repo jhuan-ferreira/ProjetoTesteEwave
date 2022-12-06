@@ -25,8 +25,7 @@ namespace ProjetoTeste
             {
                 return -1;
             }
-
-            double somaMedia = 0;
+        
             int divisores;
 
             List<int> listNumeros = new List<int>();
@@ -50,12 +49,15 @@ namespace ProjetoTeste
                 }
             }
 
+            int Soma = 0;
+
             foreach (var numero in listNumeros)
             {
-                somaMedia =+ numero;
+                Soma += numero;
+                
             }
 
-            return somaMedia;
+            return (Soma / listNumeros.Count);
         }
     }
 }
